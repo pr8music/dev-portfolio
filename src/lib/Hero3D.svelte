@@ -197,9 +197,9 @@
   <canvas bind:this={canvas}></canvas>
   <div class="hero-content">
     <h1 class="hero-title">
-      <span class="title-line">Creative</span>
-      <span class="title-line">Developer</span>
-      <span class="title-line">Portfolio</span>
+      <span class="title-line">Pranavvetrivel</span>
+      <span class="title-line">Balaji</span>
+      <span class="title-line">A Portfolio</span>
     </h1>
     <p class="hero-subtitle">
       Crafting immersive digital experiences with cutting-edge technology
