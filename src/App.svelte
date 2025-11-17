@@ -1,5 +1,6 @@
 <script>
   import Header from './lib/Header.svelte';
+  import Hero3D from './lib/Hero3D.svelte';
   import ProjectCard from './lib/ProjectCard.svelte';
   import SmoothScroll from './lib/SmoothScroll.svelte';
 
@@ -12,6 +13,7 @@
 
 <SmoothScroll>
   <Header />
+  <Hero3D />
 
   <main>
     <section id="about">
