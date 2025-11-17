@@ -1,8 +1,13 @@
 :root {
-  --background-color: #1a1a1a;
-  --text-color: #f0f0f0;
-  --primary-color: #ff3e00;
-  --card-background: #2a2a2a;
+  --background-color: #f0f7ff;
+  --text-color: #2d3748;
+  --primary-color: #4299e1;
+  --secondary-color: #63b3ed;
+  --accent-color: #90cdf4;
+  --card-background: #ffffff;
+  --water-blue: #4299e1;
+  --bubble-blue: #bee3f8;
+  --deep-blue: #2b6cb0;
 }
 
 html {
@@ -11,11 +16,16 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: var(--background-color);
+  font-family: 'Quicksand', 'Inter', sans-serif;
+  background: linear-gradient(135deg, #e6f2ff 0%, #f0f7ff 50%, #e0f4ff 100%);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Comfortaa', 'Quicksand', sans-serif;
 }
 
 main {
@@ -34,9 +44,43 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 1px solid #333;
+  border-bottom: 3px dashed var(--accent-color);
+  position: relative;
 }
 
 section:last-child {
   border-bottom: none;
+}
+
+/* Cute quirky animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes wobble {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
 }
